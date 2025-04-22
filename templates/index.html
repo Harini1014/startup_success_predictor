@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Startup Success Predictor</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>🌟 Startup Success Predictor</h1>
+    <form action="/predict" method="POST" class="form-card">
+      <label for="funding">Funding Amount (₹)</label>
+      <input type="number" id="funding" name="funding" placeholder="Eg: 5000000" required>
+
+      <label for="team_size">Team Size</label>
+      <input type="number" id="team_size" name="team_size" placeholder="Eg: 15" required>
+
+      <label for="market_size">Market Size</label>
+      <input type="number" id="market_size" name="market_size" placeholder="Eg: 500" required>
+
+      <button type="submit">Predict</button>
+    </form>
+  </div>
+</body>
+</html>

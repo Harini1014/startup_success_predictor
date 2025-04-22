@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Result - Startup Success Predictor</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>🔎 Result</h1>
+    <div class="result-card">
+      <p>{{ '🎉 Your startup is likely to succeed!' if prediction == 1 else '😕 Your startup may not succeed.' }}</p>
+      <a href="/"><button class="retry-btn">🔁 Predict Again</button></a>
+    </div>
+  </div>
+</body>
+</html>
